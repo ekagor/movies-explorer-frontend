@@ -8,7 +8,7 @@ export default function Footer() {
   const { pathname } = useLocation()
 
   return (
-    <footer className={`footer block__footer ${pathname === '/saved-movies' && 'block__footer_type_saved-movies'}`}>
+    <footer className={`footer ${pathname === '/saved-movies' && 'footer_type_saved-movies'}`}>
       <p className="footer__title">Учебный проект Яндекс.Практикум х BeatFilm.</p>
       <div className="footer__container">
         <p className="footer__subtitle">© 2023</p>

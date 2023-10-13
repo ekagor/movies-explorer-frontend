@@ -1,4 +1,4 @@
-.block__about-me {
+.about-me {
   width: 100%;
   padding: 110px 0 101px;
 }
@@ -65,7 +65,7 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .block__about-me {
+  .about-me {
     padding-top: 90px;
     padding-bottom: 91px;
   }
@@ -95,7 +95,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .block__about-me {
+  .about-me {
     padding-top: 71px;
     padding-bottom: 70px;
   }

@@ -1,4 +1,4 @@
-.block__about-project {
+.about-project {
   padding: 110px 0;
 }
 
@@ -75,7 +75,7 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .block__about-project {
+  .about-project {
     padding-top: 90px;
     padding-bottom: 90px;
   }
@@ -94,7 +94,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .block__about-project {
+  .about-project {
     padding-top: 70px;
     padding-bottom: 70px;
   }

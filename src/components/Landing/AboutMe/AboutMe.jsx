@@ -5,7 +5,7 @@ import Wrapper from "../../Wrapper/Wrapper"
 
 export default function AboutMe() {
   return (
-    <section className="about-me block__about-me">
+    <section className="about-me">
       <Wrapper>
         <h2 className="about-me__title">Студент</h2>
         <div className="about-me__container">

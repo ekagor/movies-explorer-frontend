@@ -1,6 +1,9 @@
-.block__techs {
+.techs {
   width: 100%;
   padding: 100px 0;
+}
+
+.techs_dark-color{
   background-color: #272727;
 }
 
@@ -60,7 +63,7 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .block__techs {
+  .techs {
     padding-top: 90px;
     padding-bottom: 90px;
   }
@@ -88,7 +91,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .block__techs {
+  .techs {
     padding-top: 70px;
     padding-bottom: 70px;
   }

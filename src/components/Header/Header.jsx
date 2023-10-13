@@ -33,7 +33,7 @@ export default function Header({ name, loggedIn }) {
   }, [isOpen])
 
   return (
-    <header className={`header block__header ${name !== 'home' ? 'block__header_type_page' : ''}`}>
+    <header className={`header header_secondary-color ${name !== 'home' ? 'header_type_page' : ''}`}>
       <div>
         <Link to={'/'} className="header__link-home"></Link>
       </div>

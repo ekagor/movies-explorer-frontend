@@ -3,7 +3,7 @@ import './AboutProject.css'
 
 export default function AboutProject() {
   return (
-    <section id={"aboutProject"} className="about-project block__about-project">
+    <section id={"aboutProject"} className="about-project about-project">
       <Wrapper>
         <h2 className="about-project__title">О проекте</h2>
         <div className="about-project__container">

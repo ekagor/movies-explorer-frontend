@@ -1,25 +1,28 @@
-.block__header {
+.header {
   display: flex;
   justify-content: space-between;
-  background-color: #073042;
   padding: 0 70px;
 }
 
+.header_secondary-color {
+  background-color: #073042;
+}
+
 @media screen and (max-width:1023px) {
-  .block__header {
+  .header {
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 
 @media screen and (max-width:767px) {
-  .block__header {
+  .header {
     padding-left: 14px;
     padding-right: 12px;
   }
 }
 
-.block__header_type_page {
+.header_type_page {
   background-color: transparent;
 }
 

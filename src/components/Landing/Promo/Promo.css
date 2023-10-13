@@ -1,11 +1,11 @@
-.block__promo {
+.promo {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #073042;
-  margin-left: 0;
-  margin-right: 0;
   padding: 75px 0;
+}
+.promo_secondary-color {
+  background-color: #073042;
 }
 
 .promo__container {
@@ -62,7 +62,7 @@
   width: 310px;
   height: 304px;
   margin-right: 70px;
-  background-image: url(../../../images/promo-logo.png);
+  background-image: url(../../../images/landing-logo.svg);
   background-size: cover;
 }
 

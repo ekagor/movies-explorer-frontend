@@ -1,4 +1,4 @@
-.block__footer {
+.footer {
   display: flex;
   flex-direction: column;
   padding: 79px 70px 0;
@@ -42,7 +42,7 @@
   transition: opacity .3s linear;
 }
 
-.block__footer_type_saved-movies {
+.footer_type_saved-movies {
   padding-top: 52px;
 }
 
@@ -51,17 +51,17 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .block__footer {
+  .footer {
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .block__footer {
+  .footer {
     padding: 79px 10px 0;
   }
-  .block__footer_type_saved-movies {
+  .footer_type_saved-movies {
     padding-top: 52px;
   }
   .footer__title {

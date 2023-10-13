@@ -22,7 +22,7 @@ export default function MoviesCard({ name, src, trailerLink }) {
         </Link>
         <div className='movies__card-group'>
           <div className='movies__text-group'>
-            <p className='movies__subtitle'>{name}</p>
+            <h2 className='movies__subtitle'>{name}</h2>
             <span className='movies__duration'>1ч 42м</span>
           </div>
           {pathname === '/movies' ?
