@@ -1,0 +1,130 @@
+.promo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 75px 0;
+}
+.promo_secondary-color {
+  background-color: #073042;
+}
+
+.promo__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  width: calc(640/1280*100%);
+}
+
+@media screen and (max-width:1023px) {
+  .promo {
+    flex-direction: column;
+    align-items: center;
+    padding: 140px 0 76px;
+  }
+}
+
+.promo__title {
+  margin: 0 0 36px 0;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 58px;
+  color: #FFFFFF;
+}
+
+.promo__subtitle {
+  margin: 0;
+  margin-bottom: 146px;
+  max-width: 310px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(255, 255, 255, .5);
+}
+
+.promo__link {
+  display: block;
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
+  width: 129px;
+  min-height: 36px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #FFFFFF;
+  transition: opacity .2s linear;
+}
+
+.promo__img {
+  width: 310px;
+  height: 304px;
+  margin-right: 70px;
+  background-image: url(../../../images/landing-logo.svg);
+  background-size: cover;
+}
+
+@media screen and (max-width:1023px) {
+  .promo__container {
+    margin-left: 0;
+    align-items: center;
+    width: calc(680/768*100%);
+  }
+  .promo__title {
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+  }
+  .promo__subtitle {
+    text-align: center;
+    margin-bottom: 92px;
+    max-width: 260px;
+  }
+  .promo__img {
+    order: -1;
+    margin-right: 0;
+    margin-bottom: 48px;
+  }
+
+}
+
+@media screen and (max-width:767px) {
+  .promo {
+    padding: 70px 0 32px;
+  }
+  .promo__container {
+    width: calc(300/320*100%);
+  }
+  .promo__title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: -1.2px;
+  }
+  .promo__subtitle {
+    margin-bottom: 80px;
+  }
+  .promo__img {
+    width: 270px;
+    height: 265px;
+    margin-bottom: 44px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .promo__img {
+    width: 210px;
+    height: 206px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .promo__link:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+}
