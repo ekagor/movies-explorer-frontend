@@ -1,0 +1,113 @@
+.block__search {
+  padding: 70px 70px 0;
+}
+
+.search__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 46px;
+}
+
+@media screen and (max-width:1023px) {
+  .block__search {
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.search__form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 16px;
+  padding-bottom: 11px;
+  box-sizing: border-box;
+  border-bottom: 1.5px solid #424242;
+}
+
+.search__input {
+  background-color: transparent;
+  border: none;
+  width: 90%;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: normal;
+  color: #8B8B8B;
+}
+
+.search__submit_disabled {
+  background-image: url(../../images/search-disabled.svg);
+  pointer-events: none;
+}
+
+
+.search__input:focus {
+  outline: 0.2px solid #4285F4;
+}
+
+.search__submit {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  background-image: url(../../images/search.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
+
+.search__error {
+  visibility: hidden;
+  min-height: 14px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: normal;
+  color: #FF004C;
+}
+
+.search__error_active {
+  visibility: visible;
+}
+
+@media screen and (max-width:767px) {
+  .block__search {
+    padding-top: 78px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .search__form {
+    margin-right: 0px;
+    margin-bottom: 13px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .search__container {
+    padding-bottom: 39px;
+  }
+  .search__form {
+    margin-bottom: 21px;
+    padding-top: 6px;
+    padding-bottom: 9px;
+  }
+  .search__input {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .search__error {
+    margin-bottom: 3px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .search__submit:hover {
+    opacity: .7;
+  }
+}
