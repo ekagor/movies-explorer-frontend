@@ -1,0 +1,248 @@
+.profile {  
+  box-sizing: border-box;
+  height: calc(100vh - 75px);
+  font-family: 'Inter', Arial, sans-serif;
+  max-width: 1280px;
+  width: 100%;
+  margin: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 83vh;
+}
+
+.profile__title {
+  line-height: 1.20;
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;  
+}
+
+.profile__container {
+  display: flex;
+  box-sizing: border-box;
+  max-height: 70px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile__form {
+  width: 100%;
+  flex-direction: column;
+  gap: 123px;
+  position: relative;
+  align-items: center;
+  max-width: 415px;
+  display: flex; 
+}
+
+
+.profile__label[type='name'] {
+  width: 100%;
+  display: flex;  
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;  
+  border-bottom: 1px solid #424242;
+  padding-bottom: 10px;
+  margin: 0 0 24px;
+  max-width: 410px;
+  
+}
+
+.profile__label[type='email'] { 
+  justify-content: space-between;
+  display: flex;
+  border: none;
+}
+
+.profile__text {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.18;
+}
+
+.profile__input {
+  border-style: none;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.18;
+  background-color: transparent;
+  color: #fff;
+  text-align: right;
+  max-width: 360px;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile__error { 
+  position: absolute;
+  left: auto;
+  bottom: -16px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #ee3465;
+}
+
+.profile__name-error {
+  position: absolute;
+  left: auto;
+  bottom: 20px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #ee3465;  
+}
+
+.profile__input:focus {
+  outline: none;
+  border-right: 1px solid #3ddc84;
+}
+
+.profile__input_errors:focus {
+  border-right: 1px solid #ee3465;
+}
+
+.profile__input_errors {
+  color: #ee3465;
+}
+
+
+.profile__button-box {
+  gap: 14px;
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__button-edit {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.23;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: auto;
+  border: none;
+  outline: 0;  
+}
+
+.profile__button-edit:disabled {
+  color: #8b8b8b;
+  cursor: default;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile__button-edit:hover {
+  opacity: 0.8;
+}
+
+.profile__button-edit:disabled:hover {
+  opacity: 1;
+}
+
+.profile__button-add {
+  padding: 14px 168px;
+  background-color: #3ddc84;
+  color: #fff;
+}
+
+.profile__button-add:disabled {
+  background-color: rgba(248, 248, 248, 1);
+  color: #424242;
+}
+
+.profile__button-out {
+  background-color: transparent;
+  color: #ee3465;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.23;  
+}
+
+.profile__button-out:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 795px) {
+  .profile {
+    margin: 236px auto;
+  }
+
+  .profile__form {
+    min-height: 445px;
+    gap: 96px;
+  }
+
+  .profile__label[type='name'] {
+    padding-bottom: 18px;
+    margin: 0 0 17px;
+  }
+
+  .profile__button-box {
+    margin-top: 113px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .profile {
+    margin-top: 68px;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  .profile__input {
+    max-width: 226px;
+  }
+  .profile__form {
+    flex: 1;
+    gap: 81px;
+    max-width: 260px;
+    min-height: 500px;    
+  }
+
+  .profile__label[type='name'] {
+    padding-bottom: 16px;
+    margin: 0 0 18px;
+  } 
+
+  .profile__container {
+    padding-bottom: 296px;
+  }
+
+  .profile__button-box {
+    margin-top: 62px;
+  }
+
+  .profile__button-edit {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  .profile__button-out {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  .profile__error {
+    bottom: 220px;
+  }
+  .profile__name-error {
+    top: -28px;
+  }
+}

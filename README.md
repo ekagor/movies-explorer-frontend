@@ -1,2 +1,6 @@
-# movies-explorer-frontend
-интерфейс на «Реакте»
+# **Диплом**
+
+## Бекэнд:
+* https://api.katydiplom.nomoredomainsrocks.ru
+## Фронтэнд:
+* https://katydiplom.nomoredomainsrocks.ru

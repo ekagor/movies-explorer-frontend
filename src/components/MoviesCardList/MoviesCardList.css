@@ -1,0 +1,115 @@
+.movies-lists {  
+  box-sizing: border-box;
+  padding: 46px 70px 157px;
+  font-family: 'Inter', Arial, sans-serif;
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;  
+}
+
+.movies-lists__list {
+  column-gap: 20px;
+  justify-items: center;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, 270px);
+  grid-auto-rows: 218px;
+  row-gap: 32px;  
+  list-style: none;
+  margin: 0 auto;
+  padding: 70px 0 0;
+  display: grid;
+  justify-content: center;
+}
+
+.movies-lists__button-plus {  
+  line-height: normal;
+  max-width: 320px;  
+  background-color: transparent;
+  border: 1px solid #424242;;
+  border-radius: 6px;
+  padding: 10px 0;
+  color: #FFFFFF;
+  width: 100%;
+  margin-top: 83px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.movies-lists__button-plus:hover {
+  opacity: 0.6;
+}
+
+.movies__serch-error {
+  text-align: center;
+  color: #8B8B8B;
+}
+
+@media screen and (max-width: 998px) {
+
+  .movies-lists__list {
+    column-gap: 32px;
+    grid-template-columns: repeat(auto-fit, 339px);
+  }
+
+  .movies-lists__list {
+    row-gap: 30px;
+  }
+
+  .movies-lists__button-plus {
+    margin-top: 79px;
+  }
+}
+
+@media screen and (max-width: 918px) {
+  .movies-lists__list {
+    grid-auto-rows: 262px;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .movies-lists__list {
+    grid-auto-rows: 262px;
+  }
+
+  .movies-lists {
+    padding: 37px 30px 159px;
+  }
+}
+
+@media screen and (max-width: 624px) {
+  .movies-lists__list {
+    grid-template-columns: repeat(auto-fit, 300px);
+    padding: 50px 0 0;
+  }
+  .movies-lists {
+    padding: 0 10px 80px;
+  }
+
+  .movies-lists__button-plus {
+    max-width: 240px;
+  }
+}
+
+.movies-lists {
+  padding: 0 10px 159px;
+}
+
+@media screen and (max-width: 583px) {
+  .movies-lists__list {
+    grid-auto-rows: 238px;
+    row-gap: 14px;
+  }
+}
+
+@media screen and (max-width: 398px) {
+  .movies-lists__list {
+    grid-auto-rows: 238px;
+    row-gap: 18px;
+  }
+}  
