@@ -15,40 +15,43 @@ class MainApi {
   };
 
   handleReply = (response) =>
-    response.ok ? response.json() : Promise.reject(`Error: ${response.status}`);
+    response.ok
+      ? Promise.resolve(response.json())
+      : Promise.reject(`Error: ${response.status}`);
 
-  makeRequest = (method, path, body, notSave) => {
+  makeRequest = (method, path, body, head=this.authHeaders) => {
     const requestOptions = {
       method: method,
-      headers: notSave ? this.requestHeaders : this.authHeaders,
+      headers: head,
     };
     if (body) requestOptions.body = JSON.stringify(body);
 
-    return fetch(`${this.apiUrl}${path}`, requestOptions).then(this.handleReply);
+    return fetch(`${this.apiUrl}${path}`, requestOptions).then(
+      this.handleReply
+    );
   };
 
   registering = (regData) =>
-    this.makeRequest('POST', '/signup', regData, 'notSave');
+    this.makeRequest("POST", "/signup", regData, this.requestHeaders);
 
   logining = (infoLogin) =>
-    this.makeRequest('POST', '/signin', infoLogin, 'notSave');
+    this.makeRequest("POST", "/signin", infoLogin, this.requestHeaders);
 
-  updatingData = (userData) =>
-    this.makeRequest('PATCH', '/users/me', userData);
+  updatingData = (userData) => this.makeRequest("PATCH", "/users/me", userData);
 
-  getUserInfo = () => this.makeRequest('GET', '/users/me');
+  getUserInfo = () => this.makeRequest("GET", "/users/me");
 
-  getSavedMovies = () => this.makeRequest('GET', '/movies');
+  getSavedMovies = () => this.makeRequest("GET", "/movies");
 
-  plusMovie = (movie) => this.makeRequest('POST', '/movies/', movie);
+  plusMovie = (movie) => this.makeRequest("POST", "/movies/", movie);
 
-  deleteMovie = (id) => this.makeRequest('DELETE', `/movies/${id}`);
+  deleteMovie = (id) => this.makeRequest("DELETE", `/movies/${id}`);
 }
 
 const api = new MainApi({
-  apiUrl: 'https://api.katydiplom.nomoredomainsrocks.ru',
+  apiUrl: "https://api.katydiplom.nomoredomainsrocks.ru",
   requestHeaders: {
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
   },
 });
 

@@ -1,19 +1,22 @@
 const SHORT_MOVIES_DURATION = 40;
 
 const VIEW_SIZE = {
-  M: 768,
+  S: 768,
+  M: 1000,
   L: 1280,
 };
 
 const INIT_CARDS = {
-  S: 5,
-  M: 8,
+  D: 5,
+  S: 8,
+  M: 12,
   L: 16,
 };
 
 const PLUS_INIT_CARDS = {
-  S: 1,
-  M: 2,
+  D: 2,
+  S: 2,
+  M: 3,
   L: 4,
 };
 

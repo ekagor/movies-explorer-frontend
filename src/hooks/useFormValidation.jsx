@@ -4,7 +4,7 @@ import { useState, useCallback } from 'react';
     const [errors, setErrors] = useState({});
     const [isValid, setIsValid] = useState(false);
   
-    console.log(initValues)
+  //  console.log(initValues)
   
     const handleChange = (evt) => {
       const target = evt.target;
