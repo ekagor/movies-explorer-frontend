@@ -52,7 +52,7 @@ export default function Profile({ loginingOut, updating }) {
                 disabled={!isProfileChange}
                 minLength="3"
                 maxLength="40"
-                pattern={'^[а-яА-Яa-zA-Z0-9]+$'}
+                pattern={'^[а-яА-Яa-zA-Z0-9\\s]+$'}
                 placeholder="Введите имя"
               />
             </label>
