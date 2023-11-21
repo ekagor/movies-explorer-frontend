@@ -7,8 +7,9 @@
   font-family: 'Inter', Arial, sans-serif;
   max-width: 1280px;
   width: 100%;
-  margin: auto;
-  height: 100vh;
+  padding: 70px 30px 59px; 
+  box-sizing: border-box; 
+  min-height: 100vh;
 }
 
 .login__form {

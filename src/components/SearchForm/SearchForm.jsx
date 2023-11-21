@@ -1,7 +1,8 @@
 import useFormValidation from '../../hooks/useFormValidation';
 import FilterCheckbox from '../FilterCheckbox/FilterCheckbox';
 import './SearchForm.css';
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 const SearchForm = ({ searchMovies, onShortChange, shortMovie, initialSearchValue = '' }) => {
   const { values, handleChange } = useFormValidation({ search: initialSearchValue });

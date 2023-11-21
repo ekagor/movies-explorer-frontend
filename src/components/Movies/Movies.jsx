@@ -44,17 +44,16 @@ const Movies = ({
 
   const handleSearchMovies = (search) => {
     abc();
-    setIsLoading(true);
-    getMovies(()=>{setIsLoading(false)});
-    setSearchedMovies(true);
+    if (!searched) {
+      setIsLoading(true);
+      getMovies(() => {setIsLoading(false)});
+      setSearchedMovies(true);
+    }
     setFirstEntrance(false);
     setInitialSearchValue(search);
     localStorage.setItem("initialSearchValue", search);
-    /*setTimeout(() => {
-      setIsLoading(false);
-    }, 500);*/
-  };
-
+  }
+ 
   const handleShortChange = (checked) => {
     setShortMovie(checked);
   };
